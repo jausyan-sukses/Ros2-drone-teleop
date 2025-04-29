@@ -1,0 +1,7 @@
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::controlLoop()’:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:129:30: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  129 |                 armAndTakeoff();
+      |                 ~~~~~~~~~~~~~^~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:130:13: note: here
+  130 |             case 'p':
+      |             ^~~~
