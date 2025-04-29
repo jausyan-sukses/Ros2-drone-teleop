@@ -1,0 +1,11 @@
+[0.008s] Invoking command in '/home/el-system/ros2_teleop/build/drone_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12
+[0.036s] [35m[1mScanning dependencies of target teleop_keyboard[0m
+[0.052s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o[0m
+[0.188s] [01m[K/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kmavros_msgs/srv/command_tolf.hpp: No such file or directory
+[0.188s]     5 | #include [01;31m[K<mavros_msgs/srv/command_tolf.hpp>[m[K
+[0.188s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.188s] compilation terminated.
+[0.190s] make[2]: *** [CMakeFiles/teleop_keyboard.dir/build.make:63: CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o] Error 1
+[0.190s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/teleop_keyboard.dir/all] Error 2
+[0.190s] make: *** [Makefile:141: all] Error 2
+[0.192s] Invoked command in '/home/el-system/ros2_teleop/build/drone_teleop' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12

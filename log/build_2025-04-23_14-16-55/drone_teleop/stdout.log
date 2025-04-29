@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target teleop_keyboard[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o[0m
+[100%] [32m[1mLinking CXX executable teleop_keyboard[0m
+[100%] Built target teleop_keyboard
+-- Install configuration: ""
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/lib/drone_teleop/teleop_keyboard
+-- Set runtime path of "/home/el-system/ros2_teleop/install/drone_teleop/lib/drone_teleop/teleop_keyboard" to ""
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/ament_index/resource_index/package_run_dependencies/drone_teleop
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/ament_index/resource_index/parent_prefix_path/drone_teleop
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/ament_prefix_path.sh
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/ament_prefix_path.dsv
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/path.sh
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/path.dsv
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/local_setup.bash
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/local_setup.sh
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/local_setup.zsh
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/local_setup.dsv
+-- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/package.dsv
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/ament_index/resource_index/packages/drone_teleop
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/cmake/drone_teleopConfig.cmake
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/cmake/drone_teleopConfig-version.cmake
+-- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/package.xml

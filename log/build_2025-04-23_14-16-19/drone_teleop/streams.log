@@ -1,0 +1,63 @@
+[0.009s] Invoking command in '/home/el-system/ros2_teleop/build/drone_teleop': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/el-system/ros2_teleop/src/drone_teleop -DCMAKE_INSTALL_PREFIX=/home/el-system/ros2_teleop/install/drone_teleop
+[0.045s] -- The C compiler identification is GNU 9.4.0
+[0.081s] -- The CXX compiler identification is GNU 9.4.0
+[0.084s] -- Check for working C compiler: /usr/lib/ccache/cc
+[0.138s] -- Check for working C compiler: /usr/lib/ccache/cc -- works
+[0.139s] -- Detecting C compiler ABI info
+[0.174s] -- Detecting C compiler ABI info - done
+[0.181s] -- Detecting C compile features
+[0.181s] -- Detecting C compile features - done
+[0.183s] -- Check for working CXX compiler: /usr/lib/ccache/c++
+[0.238s] -- Check for working CXX compiler: /usr/lib/ccache/c++ -- works
+[0.239s] -- Detecting CXX compiler ABI info
+[0.288s] -- Detecting CXX compiler ABI info - done
+[0.302s] -- Detecting CXX compile features
+[0.303s] -- Detecting CXX compile features - done
+[0.305s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.325s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.325s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.456s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.492s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.497s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.550s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.570s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.624s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.666s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.667s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.667s] -- Looking for pthread.h
+[0.720s] -- Looking for pthread.h - found
+[0.721s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.775s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.775s] -- Looking for pthread_create in pthreads
+[0.804s] -- Looking for pthread_create in pthreads - not found
+[0.804s] -- Looking for pthread_create in pthread
+[0.839s] -- Looking for pthread_create in pthread - found
+[0.840s] -- Found Threads: TRUE  
+[0.946s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.970s] -- Found mavros_msgs: 2.4.0 (/opt/ros/foxy/share/mavros_msgs/cmake)
+[1.309s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.361s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.361s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.362s] -- Configured cppcheck include dirs: 
+[1.362s] -- Configured cppcheck exclude dirs and/or files: 
+[1.362s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.362s] -- Configured cpplint exclude dirs and/or files: 
+[1.363s] -- Added test 'lint_cmake' to check CMake code style
+[1.363s] -- Added test 'uncrustify' to check C / C++ code style
+[1.363s] -- Configured uncrustify additional arguments: 
+[1.364s] -- Added test 'xmllint' to check XML markup files
+[1.366s] -- Configuring done
+[1.372s] -- Generating done
+[1.375s] -- Build files have been written to: /home/el-system/ros2_teleop/build/drone_teleop
+[1.380s] Invoked command in '/home/el-system/ros2_teleop/build/drone_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/el-system/ros2_teleop/src/drone_teleop -DCMAKE_INSTALL_PREFIX=/home/el-system/ros2_teleop/install/drone_teleop
+[1.383s] Invoking command in '/home/el-system/ros2_teleop/build/drone_teleop': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12
+[1.410s] [35m[1mScanning dependencies of target teleop_keyboard[0m
+[1.464s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o[0m
+[1.597s] [01m[K/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kmavros_msgs/srv/command_tolf.hpp: No such file or directory
+[1.597s]     5 | #include [01;31m[K<mavros_msgs/srv/command_tolf.hpp>[m[K
+[1.597s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.597s] compilation terminated.
+[1.599s] make[2]: *** [CMakeFiles/teleop_keyboard.dir/build.make:63: CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o] Error 1
+[1.600s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/teleop_keyboard.dir/all] Error 2
+[1.600s] make: *** [Makefile:141: all] Error 2
+[1.602s] Invoked command in '/home/el-system/ros2_teleop/build/drone_teleop' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12
