@@ -1,0 +1,5 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring incomplete, errors occurred!
+See also "/home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles/CMakeOutput.log".
+See also "/home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles/CMakeError.log".

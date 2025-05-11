@@ -1,0 +1,24 @@
+[0.008s] Invoking command in '/home/el-system/ros2_teleop/build/drone_teleop': /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12
+[0.023s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.038s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.138s] Traceback (most recent call last):
+[0.138s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.138s]     from ament_package.templates import get_environment_hook_template_path
+[0.138s] ModuleNotFoundError: No module named 'ament_package'
+[0.149s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.149s]   execute_process(/usr/bin/python3
+[0.149s]   /opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.150s]   /home/el-system/ros2_teleop/build/drone_teleop/ament_cmake_package_templates/templates.cmake)
+[0.150s]   returned error code 1
+[0.150s] Call Stack (most recent call first):
+[0.150s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.150s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.150s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.150s]   CMakeLists.txt:19 (find_package)
+[0.150s] 
+[0.150s] 
+[0.150s] -- Configuring incomplete, errors occurred!
+[0.150s] See also "/home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles/CMakeOutput.log".
+[0.150s] See also "/home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles/CMakeError.log".
+[0.153s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.154s] Invoked command in '/home/el-system/ros2_teleop/build/drone_teleop' returned '2': /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12

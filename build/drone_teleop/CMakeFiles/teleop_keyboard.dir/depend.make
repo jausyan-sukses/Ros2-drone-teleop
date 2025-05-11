@@ -31,7 +31,12 @@ CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/received_message_period.hpp
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/libstatistics_collector/visibility_control.hpp
+CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/mavros_msgs/msg/detail/state__builder.hpp
+CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/mavros_msgs/msg/detail/state__struct.hpp
+CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/mavros_msgs/msg/detail/state__traits.hpp
+CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/mavros_msgs/msg/detail/state__type_support.hpp
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/mavros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/mavros_msgs/msg/state.hpp
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/mavros_msgs/srv/command_bool.hpp
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/mavros_msgs/srv/command_tol.hpp
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/mavros_msgs/srv/detail/command_bool__builder.hpp
@@ -316,6 +321,8 @@ CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.hpp
+CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/std_msgs/msg/detail/header__traits.hpp
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/tracetools/config.h
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/tracetools/tracetools.h
 CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o: /opt/ros/foxy/include/tracetools/utils.hpp

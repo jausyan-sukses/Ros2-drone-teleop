@@ -22,6 +22,10 @@ find_package(geometry_msgs REQUIRED)
 find_package(mavros_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 
+# add_executable(mission_node src/mission_node.cpp)
+# ament_target_dependencies(mission_node rclcpp geometry_msgs mavros_msgs)
+# install(TARGETS mission_node DESTINATION lib/${PROJECT_NAME})
+
 add_executable(teleop_keyboard src/teleop_keyboard.cpp)
 ament_target_dependencies(teleop_keyboard rclcpp geometry_msgs mavros_msgs std_msgs)
 
@@ -39,5 +43,13 @@ if(BUILD_TESTING)
   #set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+# add_executable(mission_node src/mission_node.cpp)
+# ament_target_dependencies(mission_node rclcpp geometry_msgs mavros_msgs)
+
+# install(TARGETS
+#   mission_node
+#   DESTINATION lib/${PROJECT_NAME}
+# )
 
 ament_package()
