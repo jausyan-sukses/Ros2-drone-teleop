@@ -1,0 +1,249 @@
+[35m[1mScanning dependencies of target teleop_keyboard[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o[0m
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::command_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)’:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:423:13: error: ‘setmodeguided’ was not declared in this scope
+  423 |             setmodeguided();
+      |             ^~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:426:20: error: ‘masg’ was not declared in this scope; did you mean ‘msg’?
+  426 |         } else if (masg->data == "L") {
+      |                    ^~~~
+      |                    msg
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::setGuidedMode()’:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:448:54: error: ‘srv’ is not a member of ‘mavros_msgs’; did you mean ‘rcl_interfaces::srv’?
+  448 |         auto request = std::make_shared<mavros_msgs::srv::SetMode::Request>();
+      |                                                      ^~~
+In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,
+                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: ‘rcl_interfaces::srv’ declared here
+   26 | namespace srv
+      |           ^~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:448:54: error: ‘srv’ is not a member of ‘mavros_msgs’; did you mean ‘rcl_interfaces::srv’?
+  448 |         auto request = std::make_shared<mavros_msgs::srv::SetMode::Request>();
+      |                                                      ^~~
+In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,
+                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: ‘rcl_interfaces::srv’ declared here
+   26 | namespace srv
+      |           ^~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:448:29: error: parse error in template argument list
+  448 |         auto request = std::make_shared<mavros_msgs::srv::SetMode::Request>();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:448:77: error: no matching function for call to ‘make_shared<<expression error> >()’
+  448 |         auto request = std::make_shared<mavros_msgs::srv::SetMode::Request>();
+      |                                                                             ^
+In file included from /usr/include/c++/9/memory:81,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/usr/include/c++/9/bits/shared_ptr.h:714:5: note: candidate: ‘template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)’
+  714 |     make_shared(_Args&&... __args)
+      |     ^~~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:714:5: note:   template argument deduction/substitution failed:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:448:77: error: template argument 1 is invalid
+  448 |         auto request = std::make_shared<mavros_msgs::srv::SetMode::Request>();
+      |                                                                             ^
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:451:17: error: ‘set_mode_client_’ was not declared in this scope
+  451 |         while (!set_mode_client_->wait_for_service(1s)) {
+      |                 ^~~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:451:52: error: unable to find numeric literal operator ‘operator""s’
+  451 |         while (!set_mode_client_->wait_for_service(1s)) {
+      |                                                    ^~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:455:23: error: ‘set_mode_client_’ was not declared in this scope
+  455 |         auto result = set_mode_client_->async_send_request(request);
+      |                       ^~~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::armAndTakeoff()’:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:461:58: error: ‘srv’ is not a member of ‘mavros_msgs’; did you mean ‘rcl_interfaces::srv’?
+  461 |         auto arm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();
+      |                                                          ^~~
+In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,
+                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: ‘rcl_interfaces::srv’ declared here
+   26 | namespace srv
+      |           ^~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:461:58: error: ‘srv’ is not a member of ‘mavros_msgs’; did you mean ‘rcl_interfaces::srv’?
+  461 |         auto arm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();
+      |                                                          ^~~
+In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,
+                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: ‘rcl_interfaces::srv’ declared here
+   26 | namespace srv
+      |           ^~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:461:33: error: parse error in template argument list
+  461 |         auto arm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:461:85: error: no matching function for call to ‘make_shared<<expression error> >()’
+  461 |         auto arm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();
+      |                                                                                     ^
+In file included from /usr/include/c++/9/memory:81,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/usr/include/c++/9/bits/shared_ptr.h:714:5: note: candidate: ‘template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)’
+  714 |     make_shared(_Args&&... __args)
+      |     ^~~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:714:5: note:   template argument deduction/substitution failed:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:461:85: error: template argument 1 is invalid
+  461 |         auto arm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();
+      |                                                                                     ^
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:464:17: error: ‘arming_client_’ was not declared in this scope; did you mean ‘rmw_client_t’?
+  464 |         while (!arming_client_->wait_for_service(1s)) {
+      |                 ^~~~~~~~~~~~~~
+      |                 rmw_client_t
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:464:50: error: unable to find numeric literal operator ‘operator""s’
+  464 |         while (!arming_client_->wait_for_service(1s)) {
+      |                                                  ^~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:468:9: error: ‘arming_client_’ was not declared in this scope; did you mean ‘rmw_client_t’?
+  468 |         arming_client_->async_send_request(arm_request);
+      |         ^~~~~~~~~~~~~~
+      |         rmw_client_t
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:471:27: error: unable to find numeric literal operator ‘operator""s’
+  471 |         rclcpp::sleep_for(2s);
+      |                           ^~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:473:62: error: ‘srv’ is not a member of ‘mavros_msgs’; did you mean ‘rcl_interfaces::srv’?
+  473 |         auto takeoff_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();
+      |                                                              ^~~
+In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,
+                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: ‘rcl_interfaces::srv’ declared here
+   26 | namespace srv
+      |           ^~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:473:62: error: ‘srv’ is not a member of ‘mavros_msgs’; did you mean ‘rcl_interfaces::srv’?
+  473 |         auto takeoff_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();
+      |                                                              ^~~
+In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,
+                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: ‘rcl_interfaces::srv’ declared here
+   26 | namespace srv
+      |           ^~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:473:37: error: parse error in template argument list
+  473 |         auto takeoff_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:473:88: error: no matching function for call to ‘make_shared<<expression error> >()’
+  473 |         auto takeoff_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();
+      |                                                                                        ^
+In file included from /usr/include/c++/9/memory:81,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/usr/include/c++/9/bits/shared_ptr.h:714:5: note: candidate: ‘template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)’
+  714 |     make_shared(_Args&&... __args)
+      |     ^~~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:714:5: note:   template argument deduction/substitution failed:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:473:88: error: template argument 1 is invalid
+  473 |         auto takeoff_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();
+      |                                                                                        ^
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:476:17: error: ‘takeoff_client_’ was not declared in this scope
+  476 |         while (!takeoff_client_->wait_for_service(1s)) {
+      |                 ^~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:476:51: error: unable to find numeric literal operator ‘operator""s’
+  476 |         while (!takeoff_client_->wait_for_service(1s)) {
+      |                                                   ^~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:480:9: error: ‘takeoff_client_’ was not declared in this scope
+  480 |         takeoff_client_->async_send_request(takeoff_request);
+      |         ^~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::land()’:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:486:59: error: ‘srv’ is not a member of ‘mavros_msgs’; did you mean ‘rcl_interfaces::srv’?
+  486 |         auto land_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();
+      |                                                           ^~~
+In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,
+                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: ‘rcl_interfaces::srv’ declared here
+   26 | namespace srv
+      |           ^~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:486:59: error: ‘srv’ is not a member of ‘mavros_msgs’; did you mean ‘rcl_interfaces::srv’?
+  486 |         auto land_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();
+      |                                                           ^~~
+In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,
+                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: ‘rcl_interfaces::srv’ declared here
+   26 | namespace srv
+      |           ^~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:486:34: error: parse error in template argument list
+  486 |         auto land_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:486:85: error: no matching function for call to ‘make_shared<<expression error> >()’
+  486 |         auto land_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();
+      |                                                                                     ^
+In file included from /usr/include/c++/9/memory:81,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/usr/include/c++/9/bits/shared_ptr.h:714:5: note: candidate: ‘template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)’
+  714 |     make_shared(_Args&&... __args)
+      |     ^~~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:714:5: note:   template argument deduction/substitution failed:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:486:85: error: template argument 1 is invalid
+  486 |         auto land_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();
+      |                                                                                     ^
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:488:17: error: ‘land_client_’ was not declared in this scope
+  488 |         while (!land_client_->wait_for_service(1s)) {
+      |                 ^~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:488:48: error: unable to find numeric literal operator ‘operator""s’
+  488 |         while (!land_client_->wait_for_service(1s)) {
+      |                                                ^~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:492:9: error: ‘land_client_’ was not declared in this scope
+  492 |         land_client_->async_send_request(land_request);
+      |         ^~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::disarm()’:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:498:61: error: ‘srv’ is not a member of ‘mavros_msgs’; did you mean ‘rcl_interfaces::srv’?
+  498 |         auto disarm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();
+      |                                                             ^~~
+In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,
+                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: ‘rcl_interfaces::srv’ declared here
+   26 | namespace srv
+      |           ^~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:498:61: error: ‘srv’ is not a member of ‘mavros_msgs’; did you mean ‘rcl_interfaces::srv’?
+  498 |         auto disarm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();
+      |                                                             ^~~
+In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,
+                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: ‘rcl_interfaces::srv’ declared here
+   26 | namespace srv
+      |           ^~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:498:36: error: parse error in template argument list
+  498 |         auto disarm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:498:88: error: no matching function for call to ‘make_shared<<expression error> >()’
+  498 |         auto disarm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();
+      |                                                                                        ^
+In file included from /usr/include/c++/9/memory:81,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:
+/usr/include/c++/9/bits/shared_ptr.h:714:5: note: candidate: ‘template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)’
+  714 |     make_shared(_Args&&... __args)
+      |     ^~~~~~~~~~~
+/usr/include/c++/9/bits/shared_ptr.h:714:5: note:   template argument deduction/substitution failed:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:498:88: error: template argument 1 is invalid
+  498 |         auto disarm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();
+      |                                                                                        ^
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:501:17: error: ‘arming_client_’ was not declared in this scope; did you mean ‘rmw_client_t’?
+  501 |         while (!arming_client_->wait_for_service(1s)) {
+      |                 ^~~~~~~~~~~~~~
+      |                 rmw_client_t
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:501:50: error: unable to find numeric literal operator ‘operator""s’
+  501 |         while (!arming_client_->wait_for_service(1s)) {
+      |                                                  ^~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:505:9: error: ‘arming_client_’ was not declared in this scope; did you mean ‘rmw_client_t’?
+  505 |         arming_client_->async_send_request(disarm_request);
+      |         ^~~~~~~~~~~~~~
+      |         rmw_client_t
+make[2]: *** [CMakeFiles/teleop_keyboard.dir/build.make:63: CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/teleop_keyboard.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

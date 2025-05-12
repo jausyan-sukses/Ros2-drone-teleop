@@ -1,0 +1,276 @@
+[0.000000] (-) TimerEvent: {}
+[0.000113] (drone_teleop) JobQueued: {'identifier': 'drone_teleop', 'dependencies': OrderedDict()}
+[0.000141] (drone_teleop) JobStarted: {'identifier': 'drone_teleop'}
+[0.005457] (drone_teleop) JobProgress: {'identifier': 'drone_teleop', 'progress': 'cmake'}
+[0.006411] (drone_teleop) JobProgress: {'identifier': 'drone_teleop', 'progress': 'build'}
+[0.006451] (drone_teleop) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/el-system/ros2_teleop/build/drone_teleop', '--', '-j12', '-l12'], 'cwd': '/home/el-system/ros2_teleop/build/drone_teleop', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GZ_SIM_RESOURCE_PATH', '/home/el-system/.gazebo/models:/home/el-system/ardupilot_gazebo/build/../models'), ('USER', 'el-system'), ('LC_TIME', 'id_ID.UTF-8'), ('SSH_AGENT_PID', '1807'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/el-system'), ('OLDPWD', '/home/el-system/ros2_teleop/src'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/el-system/.nvm/versions/node/v22.14.0/bin'), ('NVM_INC', '/home/el-system/.nvm/versions/node/v22.14.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1711'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2509'), ('NVM_DIR', '/home/el-system/.nvm'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/el-system/teleop/install:/home/el-system/ros2_teleop/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'el-system'), ('JOURNAL_STREAM', '8:52291'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'el-system'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/el-system/.nvm/versions/node/v22.14.0/bin:/usr/lib/ccache:/home/el-system/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/el-system/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/el-tech:@/tmp/.ICE-unix/1907,unix/el-tech:/tmp/.ICE-unix/1907'), ('INVOCATION_ID', '8b2e2bcc133b41c8907ed0f3ec83fc7a'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/el-system/teleop/install/drone-teleop:/home/el-system/ros2_teleop/install/drone_teleop:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:03c12cd4-6a04-4daa-bece-0dd94eac81bd'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/el-system/ros2_teleop/build/drone_teleop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/usr/local/lib'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/el-system/teleop/install/drone-teleop:/home/el-system/ros2_teleop/install/drone_teleop:/opt/ros/foxy')]), 'shell': False}
+[0.037748] (drone_teleop) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target teleop_keyboard\x1b[0m\n'}
+[0.054483] (drone_teleop) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o\x1b[0m\n'}
+[0.099627] (-) TimerEvent: {}
+[0.199966] (-) TimerEvent: {}
+[0.300327] (-) TimerEvent: {}
+[0.400654] (-) TimerEvent: {}
+[0.500978] (-) TimerEvent: {}
+[0.601349] (-) TimerEvent: {}
+[0.701716] (-) TimerEvent: {}
+[0.802044] (-) TimerEvent: {}
+[0.902376] (-) TimerEvent: {}
+[1.002718] (-) TimerEvent: {}
+[1.103052] (-) TimerEvent: {}
+[1.203421] (-) TimerEvent: {}
+[1.303786] (-) TimerEvent: {}
+[1.404119] (-) TimerEvent: {}
+[1.504455] (-) TimerEvent: {}
+[1.604845] (-) TimerEvent: {}
+[1.705214] (-) TimerEvent: {}
+[1.805674] (-) TimerEvent: {}
+[1.849882] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function \xe2\x80\x98void TeleopDrone::command_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)\xe2\x80\x99:\n'}
+[1.850181] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:423:13: error: \xe2\x80\x98setmodeguided\xe2\x80\x99 was not declared in this scope\n'}
+[1.850513] (drone_teleop) StderrLine: {'line': b'  423 |             setmodeguided();\n'}
+[1.850727] (drone_teleop) StderrLine: {'line': b'      |             ^~~~~~~~~~~~~\n'}
+[1.850847] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:426:20: error: \xe2\x80\x98masg\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98msg\xe2\x80\x99?\n'}
+[1.850948] (drone_teleop) StderrLine: {'line': b'  426 |         } else if (masg->data == "L") {\n'}
+[1.851051] (drone_teleop) StderrLine: {'line': b'      |                    ^~~~\n'}
+[1.851150] (drone_teleop) StderrLine: {'line': b'      |                    msg\n'}
+[1.851249] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function \xe2\x80\x98void TeleopDrone::setGuidedMode()\xe2\x80\x99:\n'}
+[1.851350] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:448:54: error: \xe2\x80\x98srv\xe2\x80\x99 is not a member of \xe2\x80\x98mavros_msgs\xe2\x80\x99; did you mean \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99?\n'}
+[1.851450] (drone_teleop) StderrLine: {'line': b'  448 |         auto request = std::make_shared<mavros_msgs::srv::SetMode::Request>();\n'}
+[1.851562] (drone_teleop) StderrLine: {'line': b'      |                                                      ^~~\n'}
+[1.851659] (drone_teleop) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,\n'}
+[1.851757] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,\n'}
+[1.851852] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,\n'}
+[1.851944] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.852268] (drone_teleop) StderrLine: {'line': b'/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99 declared here\n'}
+[1.852612] (drone_teleop) StderrLine: {'line': b'   26 | namespace srv\n'}
+[1.852708] (drone_teleop) StderrLine: {'line': b'      |           ^~~\n'}
+[1.853229] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:448:54: error: \xe2\x80\x98srv\xe2\x80\x99 is not a member of \xe2\x80\x98mavros_msgs\xe2\x80\x99; did you mean \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99?\n'}
+[1.853366] (drone_teleop) StderrLine: {'line': b'  448 |         auto request = std::make_shared<mavros_msgs::srv::SetMode::Request>();\n'}
+[1.854099] (drone_teleop) StderrLine: {'line': b'      |                                                      ^~~\n'}
+[1.854560] (drone_teleop) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,\n'}
+[1.854708] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,\n'}
+[1.854883] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,\n'}
+[1.855014] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.855249] (drone_teleop) StderrLine: {'line': b'/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99 declared here\n'}
+[1.855424] (drone_teleop) StderrLine: {'line': b'   26 | namespace srv\n'}
+[1.855625] (drone_teleop) StderrLine: {'line': b'      |           ^~~\n'}
+[1.855870] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:448:29: error: parse error in template argument list\n'}
+[1.856014] (drone_teleop) StderrLine: {'line': b'  448 |         auto request = std::make_shared<mavros_msgs::srv::SetMode::Request>();\n'}
+[1.856151] (drone_teleop) StderrLine: {'line': b'      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[1.856284] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:448:77: error: no matching function for call to \xe2\x80\x98make_shared<<expression error> >()\xe2\x80\x99\n'}
+[1.856419] (drone_teleop) StderrLine: {'line': b'  448 |         auto request = std::make_shared<mavros_msgs::srv::SetMode::Request>();\n'}
+[1.856927] (drone_teleop) StderrLine: {'line': b'      |                                                                             ^\n'}
+[1.857069] (drone_teleop) StderrLine: {'line': b'In file included from /usr/include/c++/9/memory:81,\n'}
+[1.857237] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[1.857372] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.857566] (drone_teleop) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:714:5: note: candidate: \xe2\x80\x98template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\xe2\x80\x99\n'}
+[1.857624] (drone_teleop) StderrLine: {'line': b'  714 |     make_shared(_Args&&... __args)\n'}
+[1.857662] (drone_teleop) StderrLine: {'line': b'      |     ^~~~~~~~~~~\n'}
+[1.857694] (drone_teleop) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:714:5: note:   template argument deduction/substitution failed:\n'}
+[1.857727] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:448:77: error: template argument 1 is invalid\n'}
+[1.857756] (drone_teleop) StderrLine: {'line': b'  448 |         auto request = std::make_shared<mavros_msgs::srv::SetMode::Request>();\n'}
+[1.857810] (drone_teleop) StderrLine: {'line': b'      |                                                                             ^\n'}
+[1.857842] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:451:17: error: \xe2\x80\x98set_mode_client_\xe2\x80\x99 was not declared in this scope\n'}
+[1.857893] (drone_teleop) StderrLine: {'line': b'  451 |         while (!set_mode_client_->wait_for_service(1s)) {\n'}
+[1.857926] (drone_teleop) StderrLine: {'line': b'      |                 ^~~~~~~~~~~~~~~~\n'}
+[1.857957] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:451:52: error: unable to find numeric literal operator \xe2\x80\x98operator""s\xe2\x80\x99\n'}
+[1.857989] (drone_teleop) StderrLine: {'line': b'  451 |         while (!set_mode_client_->wait_for_service(1s)) {\n'}
+[1.858020] (drone_teleop) StderrLine: {'line': b'      |                                                    ^~\n'}
+[1.858051] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:455:23: error: \xe2\x80\x98set_mode_client_\xe2\x80\x99 was not declared in this scope\n'}
+[1.858082] (drone_teleop) StderrLine: {'line': b'  455 |         auto result = set_mode_client_->async_send_request(request);\n'}
+[1.858113] (drone_teleop) StderrLine: {'line': b'      |                       ^~~~~~~~~~~~~~~~\n'}
+[1.858145] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function \xe2\x80\x98void TeleopDrone::armAndTakeoff()\xe2\x80\x99:\n'}
+[1.858177] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:461:58: error: \xe2\x80\x98srv\xe2\x80\x99 is not a member of \xe2\x80\x98mavros_msgs\xe2\x80\x99; did you mean \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99?\n'}
+[1.858210] (drone_teleop) StderrLine: {'line': b'  461 |         auto arm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();\n'}
+[1.858240] (drone_teleop) StderrLine: {'line': b'      |                                                          ^~~\n'}
+[1.858272] (drone_teleop) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,\n'}
+[1.858303] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,\n'}
+[1.858333] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,\n'}
+[1.858362] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.858391] (drone_teleop) StderrLine: {'line': b'/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99 declared here\n'}
+[1.858421] (drone_teleop) StderrLine: {'line': b'   26 | namespace srv\n'}
+[1.858451] (drone_teleop) StderrLine: {'line': b'      |           ^~~\n'}
+[1.858480] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:461:58: error: \xe2\x80\x98srv\xe2\x80\x99 is not a member of \xe2\x80\x98mavros_msgs\xe2\x80\x99; did you mean \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99?\n'}
+[1.858511] (drone_teleop) StderrLine: {'line': b'  461 |         auto arm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();\n'}
+[1.858559] (drone_teleop) StderrLine: {'line': b'      |                                                          ^~~\n'}
+[1.858590] (drone_teleop) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,\n'}
+[1.858621] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,\n'}
+[1.858651] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,\n'}
+[1.858682] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.858712] (drone_teleop) StderrLine: {'line': b'/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99 declared here\n'}
+[1.858744] (drone_teleop) StderrLine: {'line': b'   26 | namespace srv\n'}
+[1.858775] (drone_teleop) StderrLine: {'line': b'      |           ^~~\n'}
+[1.858805] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:461:33: error: parse error in template argument list\n'}
+[1.858836] (drone_teleop) StderrLine: {'line': b'  461 |         auto arm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();\n'}
+[1.858866] (drone_teleop) StderrLine: {'line': b'      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[1.858896] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:461:85: error: no matching function for call to \xe2\x80\x98make_shared<<expression error> >()\xe2\x80\x99\n'}
+[1.858928] (drone_teleop) StderrLine: {'line': b'  461 |         auto arm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();\n'}
+[1.858958] (drone_teleop) StderrLine: {'line': b'      |                                                                                     ^\n'}
+[1.859004] (drone_teleop) StderrLine: {'line': b'In file included from /usr/include/c++/9/memory:81,\n'}
+[1.859037] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[1.859068] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.859099] (drone_teleop) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:714:5: note: candidate: \xe2\x80\x98template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\xe2\x80\x99\n'}
+[1.859130] (drone_teleop) StderrLine: {'line': b'  714 |     make_shared(_Args&&... __args)\n'}
+[1.859160] (drone_teleop) StderrLine: {'line': b'      |     ^~~~~~~~~~~\n'}
+[1.859191] (drone_teleop) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:714:5: note:   template argument deduction/substitution failed:\n'}
+[1.859223] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:461:85: error: template argument 1 is invalid\n'}
+[1.859254] (drone_teleop) StderrLine: {'line': b'  461 |         auto arm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();\n'}
+[1.859285] (drone_teleop) StderrLine: {'line': b'      |                                                                                     ^\n'}
+[1.859316] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:464:17: error: \xe2\x80\x98arming_client_\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98rmw_client_t\xe2\x80\x99?\n'}
+[1.859351] (drone_teleop) StderrLine: {'line': b'  464 |         while (!arming_client_->wait_for_service(1s)) {\n'}
+[1.859383] (drone_teleop) StderrLine: {'line': b'      |                 ^~~~~~~~~~~~~~\n'}
+[1.859414] (drone_teleop) StderrLine: {'line': b'      |                 rmw_client_t\n'}
+[1.859445] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:464:50: error: unable to find numeric literal operator \xe2\x80\x98operator""s\xe2\x80\x99\n'}
+[1.859478] (drone_teleop) StderrLine: {'line': b'  464 |         while (!arming_client_->wait_for_service(1s)) {\n'}
+[1.859510] (drone_teleop) StderrLine: {'line': b'      |                                                  ^~\n'}
+[1.859540] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:468:9: error: \xe2\x80\x98arming_client_\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98rmw_client_t\xe2\x80\x99?\n'}
+[1.859573] (drone_teleop) StderrLine: {'line': b'  468 |         arming_client_->async_send_request(arm_request);\n'}
+[1.859605] (drone_teleop) StderrLine: {'line': b'      |         ^~~~~~~~~~~~~~\n'}
+[1.859636] (drone_teleop) StderrLine: {'line': b'      |         rmw_client_t\n'}
+[1.859667] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:471:27: error: unable to find numeric literal operator \xe2\x80\x98operator""s\xe2\x80\x99\n'}
+[1.859697] (drone_teleop) StderrLine: {'line': b'  471 |         rclcpp::sleep_for(2s);\n'}
+[1.859728] (drone_teleop) StderrLine: {'line': b'      |                           ^~\n'}
+[1.859759] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:473:62: error: \xe2\x80\x98srv\xe2\x80\x99 is not a member of \xe2\x80\x98mavros_msgs\xe2\x80\x99; did you mean \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99?\n'}
+[1.859790] (drone_teleop) StderrLine: {'line': b'  473 |         auto takeoff_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();\n'}
+[1.859821] (drone_teleop) StderrLine: {'line': b'      |                                                              ^~~\n'}
+[1.859850] (drone_teleop) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,\n'}
+[1.859883] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,\n'}
+[1.859916] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,\n'}
+[1.859947] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.859979] (drone_teleop) StderrLine: {'line': b'/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99 declared here\n'}
+[1.860025] (drone_teleop) StderrLine: {'line': b'   26 | namespace srv\n'}
+[1.860056] (drone_teleop) StderrLine: {'line': b'      |           ^~~\n'}
+[1.860085] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:473:62: error: \xe2\x80\x98srv\xe2\x80\x99 is not a member of \xe2\x80\x98mavros_msgs\xe2\x80\x99; did you mean \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99?\n'}
+[1.860117] (drone_teleop) StderrLine: {'line': b'  473 |         auto takeoff_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();\n'}
+[1.860146] (drone_teleop) StderrLine: {'line': b'      |                                                              ^~~\n'}
+[1.860177] (drone_teleop) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,\n'}
+[1.860208] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,\n'}
+[1.860238] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,\n'}
+[1.860267] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.860296] (drone_teleop) StderrLine: {'line': b'/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99 declared here\n'}
+[1.860325] (drone_teleop) StderrLine: {'line': b'   26 | namespace srv\n'}
+[1.860355] (drone_teleop) StderrLine: {'line': b'      |           ^~~\n'}
+[1.860397] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:473:37: error: parse error in template argument list\n'}
+[1.860431] (drone_teleop) StderrLine: {'line': b'  473 |         auto takeoff_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();\n'}
+[1.860461] (drone_teleop) StderrLine: {'line': b'      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[1.860491] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:473:88: error: no matching function for call to \xe2\x80\x98make_shared<<expression error> >()\xe2\x80\x99\n'}
+[1.860522] (drone_teleop) StderrLine: {'line': b'  473 |         auto takeoff_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();\n'}
+[1.860552] (drone_teleop) StderrLine: {'line': b'      |                                                                                        ^\n'}
+[1.860582] (drone_teleop) StderrLine: {'line': b'In file included from /usr/include/c++/9/memory:81,\n'}
+[1.860615] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[1.860647] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.860679] (drone_teleop) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:714:5: note: candidate: \xe2\x80\x98template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\xe2\x80\x99\n'}
+[1.860713] (drone_teleop) StderrLine: {'line': b'  714 |     make_shared(_Args&&... __args)\n'}
+[1.860745] (drone_teleop) StderrLine: {'line': b'      |     ^~~~~~~~~~~\n'}
+[1.860777] (drone_teleop) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:714:5: note:   template argument deduction/substitution failed:\n'}
+[1.860808] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:473:88: error: template argument 1 is invalid\n'}
+[1.860839] (drone_teleop) StderrLine: {'line': b'  473 |         auto takeoff_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();\n'}
+[1.860872] (drone_teleop) StderrLine: {'line': b'      |                                                                                        ^\n'}
+[1.860902] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:476:17: error: \xe2\x80\x98takeoff_client_\xe2\x80\x99 was not declared in this scope\n'}
+[1.860934] (drone_teleop) StderrLine: {'line': b'  476 |         while (!takeoff_client_->wait_for_service(1s)) {\n'}
+[1.860965] (drone_teleop) StderrLine: {'line': b'      |                 ^~~~~~~~~~~~~~~\n'}
+[1.860996] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:476:51: error: unable to find numeric literal operator \xe2\x80\x98operator""s\xe2\x80\x99\n'}
+[1.861026] (drone_teleop) StderrLine: {'line': b'  476 |         while (!takeoff_client_->wait_for_service(1s)) {\n'}
+[1.861056] (drone_teleop) StderrLine: {'line': b'      |                                                   ^~\n'}
+[1.861086] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:480:9: error: \xe2\x80\x98takeoff_client_\xe2\x80\x99 was not declared in this scope\n'}
+[1.861117] (drone_teleop) StderrLine: {'line': b'  480 |         takeoff_client_->async_send_request(takeoff_request);\n'}
+[1.861147] (drone_teleop) StderrLine: {'line': b'      |         ^~~~~~~~~~~~~~~\n'}
+[1.861178] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function \xe2\x80\x98void TeleopDrone::land()\xe2\x80\x99:\n'}
+[1.861210] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:486:59: error: \xe2\x80\x98srv\xe2\x80\x99 is not a member of \xe2\x80\x98mavros_msgs\xe2\x80\x99; did you mean \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99?\n'}
+[1.861244] (drone_teleop) StderrLine: {'line': b'  486 |         auto land_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();\n'}
+[1.861276] (drone_teleop) StderrLine: {'line': b'      |                                                           ^~~\n'}
+[1.861307] (drone_teleop) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,\n'}
+[1.861338] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,\n'}
+[1.861369] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,\n'}
+[1.861401] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.861434] (drone_teleop) StderrLine: {'line': b'/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99 declared here\n'}
+[1.861468] (drone_teleop) StderrLine: {'line': b'   26 | namespace srv\n'}
+[1.861507] (drone_teleop) StderrLine: {'line': b'      |           ^~~\n'}
+[1.861542] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:486:59: error: \xe2\x80\x98srv\xe2\x80\x99 is not a member of \xe2\x80\x98mavros_msgs\xe2\x80\x99; did you mean \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99?\n'}
+[1.861576] (drone_teleop) StderrLine: {'line': b'  486 |         auto land_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();\n'}
+[1.861607] (drone_teleop) StderrLine: {'line': b'      |                                                           ^~~\n'}
+[1.861637] (drone_teleop) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,\n'}
+[1.861669] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,\n'}
+[1.861699] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,\n'}
+[1.861737] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.861768] (drone_teleop) StderrLine: {'line': b'/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99 declared here\n'}
+[1.861802] (drone_teleop) StderrLine: {'line': b'   26 | namespace srv\n'}
+[1.861833] (drone_teleop) StderrLine: {'line': b'      |           ^~~\n'}
+[1.861866] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:486:34: error: parse error in template argument list\n'}
+[1.861900] (drone_teleop) StderrLine: {'line': b'  486 |         auto land_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();\n'}
+[1.861932] (drone_teleop) StderrLine: {'line': b'      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[1.861964] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:486:85: error: no matching function for call to \xe2\x80\x98make_shared<<expression error> >()\xe2\x80\x99\n'}
+[1.861996] (drone_teleop) StderrLine: {'line': b'  486 |         auto land_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();\n'}
+[1.862027] (drone_teleop) StderrLine: {'line': b'      |                                                                                     ^\n'}
+[1.862059] (drone_teleop) StderrLine: {'line': b'In file included from /usr/include/c++/9/memory:81,\n'}
+[1.862090] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[1.862122] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.862172] (drone_teleop) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:714:5: note: candidate: \xe2\x80\x98template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\xe2\x80\x99\n'}
+[1.862210] (drone_teleop) StderrLine: {'line': b'  714 |     make_shared(_Args&&... __args)\n'}
+[1.862247] (drone_teleop) StderrLine: {'line': b'      |     ^~~~~~~~~~~\n'}
+[1.862283] (drone_teleop) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:714:5: note:   template argument deduction/substitution failed:\n'}
+[1.862319] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:486:85: error: template argument 1 is invalid\n'}
+[1.862354] (drone_teleop) StderrLine: {'line': b'  486 |         auto land_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();\n'}
+[1.862391] (drone_teleop) StderrLine: {'line': b'      |                                                                                     ^\n'}
+[1.862426] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:488:17: error: \xe2\x80\x98land_client_\xe2\x80\x99 was not declared in this scope\n'}
+[1.862480] (drone_teleop) StderrLine: {'line': b'  488 |         while (!land_client_->wait_for_service(1s)) {\n'}
+[1.862517] (drone_teleop) StderrLine: {'line': b'      |                 ^~~~~~~~~~~~\n'}
+[1.862553] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:488:48: error: unable to find numeric literal operator \xe2\x80\x98operator""s\xe2\x80\x99\n'}
+[1.862590] (drone_teleop) StderrLine: {'line': b'  488 |         while (!land_client_->wait_for_service(1s)) {\n'}
+[1.862626] (drone_teleop) StderrLine: {'line': b'      |                                                ^~\n'}
+[1.862662] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:492:9: error: \xe2\x80\x98land_client_\xe2\x80\x99 was not declared in this scope\n'}
+[1.862697] (drone_teleop) StderrLine: {'line': b'  492 |         land_client_->async_send_request(land_request);\n'}
+[1.862734] (drone_teleop) StderrLine: {'line': b'      |         ^~~~~~~~~~~~\n'}
+[1.862770] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function \xe2\x80\x98void TeleopDrone::disarm()\xe2\x80\x99:\n'}
+[1.862804] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:498:61: error: \xe2\x80\x98srv\xe2\x80\x99 is not a member of \xe2\x80\x98mavros_msgs\xe2\x80\x99; did you mean \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99?\n'}
+[1.862843] (drone_teleop) StderrLine: {'line': b'  498 |         auto disarm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();\n'}
+[1.862879] (drone_teleop) StderrLine: {'line': b'      |                                                             ^~~\n'}
+[1.862918] (drone_teleop) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,\n'}
+[1.862957] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,\n'}
+[1.862996] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,\n'}
+[1.863033] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.863071] (drone_teleop) StderrLine: {'line': b'/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99 declared here\n'}
+[1.863110] (drone_teleop) StderrLine: {'line': b'   26 | namespace srv\n'}
+[1.863148] (drone_teleop) StderrLine: {'line': b'      |           ^~~\n'}
+[1.863187] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:498:61: error: \xe2\x80\x98srv\xe2\x80\x99 is not a member of \xe2\x80\x98mavros_msgs\xe2\x80\x99; did you mean \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99?\n'}
+[1.863229] (drone_teleop) StderrLine: {'line': b'  498 |         auto disarm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();\n'}
+[1.863268] (drone_teleop) StderrLine: {'line': b'      |                                                             ^~~\n'}
+[1.863305] (drone_teleop) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rcl_interfaces/srv/describe_parameters.hpp:7,\n'}
+[1.863342] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/parameter_client.hpp:26,\n'}
+[1.863379] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:151,\n'}
+[1.863418] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.863455] (drone_teleop) StderrLine: {'line': b'/opt/ros/foxy/include/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:26:11: note: \xe2\x80\x98rcl_interfaces::srv\xe2\x80\x99 declared here\n'}
+[1.863493] (drone_teleop) StderrLine: {'line': b'   26 | namespace srv\n'}
+[1.863530] (drone_teleop) StderrLine: {'line': b'      |           ^~~\n'}
+[1.863567] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:498:36: error: parse error in template argument list\n'}
+[1.863605] (drone_teleop) StderrLine: {'line': b'  498 |         auto disarm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();\n'}
+[1.863643] (drone_teleop) StderrLine: {'line': b'      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[1.863682] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:498:88: error: no matching function for call to \xe2\x80\x98make_shared<<expression error> >()\xe2\x80\x99\n'}
+[1.863721] (drone_teleop) StderrLine: {'line': b'  498 |         auto disarm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();\n'}
+[1.863760] (drone_teleop) StderrLine: {'line': b'      |                                                                                        ^\n'}
+[1.863799] (drone_teleop) StderrLine: {'line': b'In file included from /usr/include/c++/9/memory:81,\n'}
+[1.863839] (drone_teleop) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,\n'}
+[1.863879] (drone_teleop) StderrLine: {'line': b'                 from /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:376:\n'}
+[1.863917] (drone_teleop) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:714:5: note: candidate: \xe2\x80\x98template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\xe2\x80\x99\n'}
+[1.863956] (drone_teleop) StderrLine: {'line': b'  714 |     make_shared(_Args&&... __args)\n'}
+[1.863993] (drone_teleop) StderrLine: {'line': b'      |     ^~~~~~~~~~~\n'}
+[1.864030] (drone_teleop) StderrLine: {'line': b'/usr/include/c++/9/bits/shared_ptr.h:714:5: note:   template argument deduction/substitution failed:\n'}
+[1.864069] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:498:88: error: template argument 1 is invalid\n'}
+[1.864108] (drone_teleop) StderrLine: {'line': b'  498 |         auto disarm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();\n'}
+[1.864145] (drone_teleop) StderrLine: {'line': b'      |                                                                                        ^\n'}
+[1.864185] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:501:17: error: \xe2\x80\x98arming_client_\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98rmw_client_t\xe2\x80\x99?\n'}
+[1.864229] (drone_teleop) StderrLine: {'line': b'  501 |         while (!arming_client_->wait_for_service(1s)) {\n'}
+[1.864267] (drone_teleop) StderrLine: {'line': b'      |                 ^~~~~~~~~~~~~~\n'}
+[1.864318] (drone_teleop) StderrLine: {'line': b'      |                 rmw_client_t\n'}
+[1.864355] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:501:50: error: unable to find numeric literal operator \xe2\x80\x98operator""s\xe2\x80\x99\n'}
+[1.864394] (drone_teleop) StderrLine: {'line': b'  501 |         while (!arming_client_->wait_for_service(1s)) {\n'}
+[1.864437] (drone_teleop) StderrLine: {'line': b'      |                                                  ^~\n'}
+[1.864478] (drone_teleop) StderrLine: {'line': b'/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:505:9: error: \xe2\x80\x98arming_client_\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98rmw_client_t\xe2\x80\x99?\n'}
+[1.864520] (drone_teleop) StderrLine: {'line': b'  505 |         arming_client_->async_send_request(disarm_request);\n'}
+[1.864560] (drone_teleop) StderrLine: {'line': b'      |         ^~~~~~~~~~~~~~\n'}
+[1.864601] (drone_teleop) StderrLine: {'line': b'      |         rmw_client_t\n'}
+[1.864642] (drone_teleop) StderrLine: {'line': b'make[2]: *** [CMakeFiles/teleop_keyboard.dir/build.make:63: CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o] Error 1\n'}
+[1.864683] (drone_teleop) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/teleop_keyboard.dir/all] Error 2\n'}
+[1.864723] (drone_teleop) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[1.864768] (drone_teleop) CommandEnded: {'returncode': 2}
+[1.871009] (drone_teleop) JobEnded: {'identifier': 'drone_teleop', 'rc': 2}
+[1.881829] (-) EventReactorShutdown: {}

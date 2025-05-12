@@ -17,7 +17,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -34,7 +35,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -50,8 +52,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "teleop_keyboard::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-teleop_keyboard-2c48e4d2efcf071652b1.json",
+					"jsonFile" : "target-teleop_keyboard-addb68c8891a4a56555c.json",
 					"name" : "teleop_keyboard",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "teleop_sequencer_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teleop_sequencer_node-f7538cb6f6ad1c78db8e.json",
+					"name" : "teleop_sequencer_node",
 					"projectIndex" : 0
 				},
 				{

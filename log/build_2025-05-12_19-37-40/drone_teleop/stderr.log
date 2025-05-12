@@ -1,0 +1,11 @@
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::commandCallback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)’:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:282:47: error: no matching function for call to ‘TeleopDrone::publishVelocity(double, double, double, double)’
+  282 |             publishVelocity(0.0, 0.0, 0.0, 0.5);  // Stop
+      |                                               ^
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:288:10: note: candidate: ‘void TeleopDrone::publishVelocity(double, double, double)’
+  288 |     void publishVelocity(double x, double y, double z)
+      |          ^~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:288:10: note:   candidate expects 3 arguments, 4 provided
+make[2]: *** [CMakeFiles/teleop_keyboard.dir/build.make:63: CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/teleop_keyboard.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

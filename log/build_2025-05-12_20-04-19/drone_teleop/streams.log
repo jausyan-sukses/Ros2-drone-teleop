@@ -1,0 +1,30 @@
+[0.009s] Invoking command in '/home/el-system/ros2_teleop/build/drone_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12
+[0.038s] [35m[1mScanning dependencies of target teleop_keyboard[0m
+[0.054s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o[0m
+[5.148s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::publishVelocity(double, double, double, double)’:
+[5.148s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:63: warning: unused parameter ‘p’ [-Wunused-parameter]
+[5.148s]   290 |     void publishVelocity(double x, double y, double z, double p)
+[5.148s]       |                                                        ~~~~~~~^
+[5.156s] [100%] [32m[1mLinking CXX executable teleop_keyboard[0m
+[5.388s] [100%] Built target teleop_keyboard
+[5.399s] Invoked command in '/home/el-system/ros2_teleop/build/drone_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12
+[5.409s] Invoking command in '/home/el-system/ros2_teleop/build/drone_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/el-system/ros2_teleop/build/drone_teleop
+[5.416s] -- Install configuration: ""
+[5.416s] -- Installing: /home/el-system/ros2_teleop/install/drone_teleop/lib/drone_teleop/teleop_keyboard
+[5.419s] -- Set runtime path of "/home/el-system/ros2_teleop/install/drone_teleop/lib/drone_teleop/teleop_keyboard" to ""
+[5.419s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/ament_index/resource_index/package_run_dependencies/drone_teleop
+[5.419s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/ament_index/resource_index/parent_prefix_path/drone_teleop
+[5.419s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/ament_prefix_path.sh
+[5.419s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/ament_prefix_path.dsv
+[5.419s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/path.sh
+[5.419s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/path.dsv
+[5.419s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/local_setup.bash
+[5.420s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/local_setup.sh
+[5.420s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/local_setup.zsh
+[5.421s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/local_setup.dsv
+[5.421s] -- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/package.dsv
+[5.421s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/ament_index/resource_index/packages/drone_teleop
+[5.421s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/cmake/drone_teleopConfig.cmake
+[5.421s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/cmake/drone_teleopConfig-version.cmake
+[5.421s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/package.xml
+[5.421s] Invoked command in '/home/el-system/ros2_teleop/build/drone_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/el-system/ros2_teleop/build/drone_teleop

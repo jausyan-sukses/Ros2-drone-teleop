@@ -1,0 +1,56 @@
+[0.009s] Invoking command in '/home/el-system/ros2_teleop/build/drone_teleop': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12
+[0.026s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.043s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.172s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.195s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.197s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.280s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.312s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.313s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.409s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.432s] -- Found mavros_msgs: 2.4.0 (/opt/ros/foxy/share/mavros_msgs/cmake)
+[0.762s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.804s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.804s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.804s] -- Configured cppcheck include dirs: 
+[0.804s] -- Configured cppcheck exclude dirs and/or files: 
+[0.805s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.805s] -- Configured cpplint exclude dirs and/or files: 
+[0.805s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.805s] -- Added test 'lint_cmake' to check CMake code style
+[0.805s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.806s] -- Added test 'uncrustify' to check C / C++ code style
+[0.806s] -- Configured uncrustify additional arguments: 
+[0.806s] -- Added test 'xmllint' to check XML markup files
+[0.807s] -- Configuring done
+[0.817s] -- Generating done
+[0.821s] -- Build files have been written to: /home/el-system/ros2_teleop/build/drone_teleop
+[0.838s] [35m[1mScanning dependencies of target teleop_sequencer_node[0m
+[0.852s] [ 50%] Built target teleop_keyboard
+[0.858s] [ 75%] [32mBuilding CXX object CMakeFiles/teleop_sequencer_node.dir/home/el-system/ros2_ws/src/drone_teleop/src/teleop_sequencer_node.cpp.o[0m
+[0.874s] [100%] [32m[1mLinking CXX executable teleop_sequencer_node[0m
+[0.985s] [100%] Built target teleop_sequencer_node
+[0.992s] Invoked command in '/home/el-system/ros2_teleop/build/drone_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12
+[1.002s] Invoking command in '/home/el-system/ros2_teleop/build/drone_teleop': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/el-system/ros2_teleop/build/drone_teleop
+[1.007s] -- Install configuration: ""
+[1.007s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/launch
+[1.007s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/launch/pattern_launch.py
+[1.007s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/lib/drone_teleop/teleop_keyboard
+[1.008s] -- Installing: /home/el-system/ros2_teleop/install/drone_teleop/lib/drone_teleop/teleop_sequencer_node
+[1.008s] -- Set runtime path of "/home/el-system/ros2_teleop/install/drone_teleop/lib/drone_teleop/teleop_sequencer_node" to ""
+[1.008s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/ament_index/resource_index/package_run_dependencies/drone_teleop
+[1.008s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/ament_index/resource_index/parent_prefix_path/drone_teleop
+[1.008s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/ament_prefix_path.sh
+[1.008s] -- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/ament_prefix_path.dsv
+[1.008s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/path.sh
+[1.008s] -- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/path.dsv
+[1.009s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/local_setup.bash
+[1.009s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/local_setup.sh
+[1.009s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/local_setup.zsh
+[1.009s] -- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/local_setup.dsv
+[1.009s] -- Installing: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/package.dsv
+[1.010s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/ament_index/resource_index/packages/drone_teleop
+[1.010s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/cmake/drone_teleopConfig.cmake
+[1.011s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/cmake/drone_teleopConfig-version.cmake
+[1.012s] -- Up-to-date: /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/package.xml
+[1.012s] Invoked command in '/home/el-system/ros2_teleop/build/drone_teleop' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/el-system/ros2_teleop/build/drone_teleop

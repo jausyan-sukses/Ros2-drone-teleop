@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target teleop_keyboard[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o[0m
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::commandCallback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)’:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:276:48: error: expected ‘;’ before ‘}’ token
+  276 |             publishVelocity(0.0, 1.0, 0.0, 0.0)
+      |                                                ^
+      |                                                ;
+  277 |         } else if (key == 'L') {
+      |         ~                                       
+make[2]: *** [CMakeFiles/teleop_keyboard.dir/build.make:63: CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/teleop_keyboard.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

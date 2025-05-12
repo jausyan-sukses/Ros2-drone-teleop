@@ -1,0 +1,7 @@
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::publishVelocity(double, double, double, double)’:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:296:25: error: ‘using _angular_type = struct geometry_msgs::msg::Vector3_<std::allocator<void> >’ {aka ‘struct geometry_msgs::msg::Vector3_<std::allocator<void> >’} has no member named ‘p’
+  296 |         vel_msg.angular.p = p;
+      |                         ^
+make[2]: *** [CMakeFiles/teleop_keyboard.dir/build.make:63: CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/teleop_keyboard.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

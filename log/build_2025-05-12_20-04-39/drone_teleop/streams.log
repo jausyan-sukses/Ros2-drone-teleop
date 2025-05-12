@@ -1,0 +1,35 @@
+[0.009s] Invoking command in '/home/el-system/ros2_teleop/build/drone_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12
+[0.037s] [35m[1mScanning dependencies of target teleop_keyboard[0m
+[0.058s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o[0m
+[2.616s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:63: error: redefinition of ‘double z’
+[2.616s]   290 |     void publishVelocity(double x, double y, double z, double z)
+[2.616s]       |                                                        ~~~~~~~^
+[2.616s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:53: note: ‘double z’ previously declared here
+[2.617s]   290 |     void publishVelocity(double x, double y, double z, double z)
+[2.617s]       |                                              ~~~~~~~^
+[2.617s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::commandCallback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)’:
+[2.617s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:280:47: error: no matching function for call to ‘TeleopDrone::publishVelocity(double, double, double, double)’
+[2.617s]   280 |             publishVelocity(1.0, 0.0, 0.0, 0.0);  // Maju
+[2.618s]       |                                               ^
+[2.618s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:10: note: candidate: ‘void TeleopDrone::publishVelocity(double, double, double)’
+[2.618s]   290 |     void publishVelocity(double x, double y, double z, double z)
+[2.619s]       |          ^~~~~~~~~~~~~~~
+[2.620s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:10: note:   candidate expects 3 arguments, 4 provided
+[2.620s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:282:47: error: no matching function for call to ‘TeleopDrone::publishVelocity(double, double, double, double)’
+[2.620s]   282 |             publishVelocity(0.0, 0.0, 0.0, 0.5);  // Stop
+[2.620s]       |                                               ^
+[2.620s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:10: note: candidate: ‘void TeleopDrone::publishVelocity(double, double, double)’
+[2.620s]   290 |     void publishVelocity(double x, double y, double z, double z)
+[2.621s]       |          ^~~~~~~~~~~~~~~
+[2.621s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:10: note:   candidate expects 3 arguments, 4 provided
+[2.621s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:284:48: error: no matching function for call to ‘TeleopDrone::publishVelocity(double, double, double, double)’
+[2.621s]   284 |             publishVelocity(-1.0, 0.0, 0.0, 0.0);  //
+[2.621s]       |                                                ^
+[2.622s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:10: note: candidate: ‘void TeleopDrone::publishVelocity(double, double, double)’
+[2.622s]   290 |     void publishVelocity(double x, double y, double z, double z)
+[2.622s]       |          ^~~~~~~~~~~~~~~
+[2.622s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:10: note:   candidate expects 3 arguments, 4 provided
+[2.622s] make[2]: *** [CMakeFiles/teleop_keyboard.dir/build.make:63: CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o] Error 1
+[2.623s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/teleop_keyboard.dir/all] Error 2
+[2.623s] make: *** [Makefile:141: all] Error 2
+[2.623s] Invoked command in '/home/el-system/ros2_teleop/build/drone_teleop' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12

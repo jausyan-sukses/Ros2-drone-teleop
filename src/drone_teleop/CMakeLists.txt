@@ -29,8 +29,16 @@ find_package(std_msgs REQUIRED)
 add_executable(teleop_keyboard src/teleop_keyboard.cpp)
 ament_target_dependencies(teleop_keyboard rclcpp geometry_msgs mavros_msgs std_msgs)
 
+add_executable(teleop_sequencer_node /home/el-system/ros2_ws/src/drone_teleop/src/teleop_sequencer_node.cpp)
+ament_target_dependencies(teleop_sequencer_node rclcpp geometry_msgs mavros_msgs std_msgs)
+
+install(DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
 install(TARGETS
   teleop_keyboard
+  teleop_sequencer_node
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

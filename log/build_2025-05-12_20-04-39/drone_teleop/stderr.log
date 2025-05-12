@@ -1,0 +1,31 @@
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:63: error: redefinition of ‘double z’
+  290 |     void publishVelocity(double x, double y, double z, double z)
+      |                                                        ~~~~~~~^
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:53: note: ‘double z’ previously declared here
+  290 |     void publishVelocity(double x, double y, double z, double z)
+      |                                              ~~~~~~~^
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::commandCallback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)’:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:280:47: error: no matching function for call to ‘TeleopDrone::publishVelocity(double, double, double, double)’
+  280 |             publishVelocity(1.0, 0.0, 0.0, 0.0);  // Maju
+      |                                               ^
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:10: note: candidate: ‘void TeleopDrone::publishVelocity(double, double, double)’
+  290 |     void publishVelocity(double x, double y, double z, double z)
+      |          ^~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:10: note:   candidate expects 3 arguments, 4 provided
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:282:47: error: no matching function for call to ‘TeleopDrone::publishVelocity(double, double, double, double)’
+  282 |             publishVelocity(0.0, 0.0, 0.0, 0.5);  // Stop
+      |                                               ^
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:10: note: candidate: ‘void TeleopDrone::publishVelocity(double, double, double)’
+  290 |     void publishVelocity(double x, double y, double z, double z)
+      |          ^~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:10: note:   candidate expects 3 arguments, 4 provided
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:284:48: error: no matching function for call to ‘TeleopDrone::publishVelocity(double, double, double, double)’
+  284 |             publishVelocity(-1.0, 0.0, 0.0, 0.0);  //
+      |                                                ^
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:10: note: candidate: ‘void TeleopDrone::publishVelocity(double, double, double)’
+  290 |     void publishVelocity(double x, double y, double z, double z)
+      |          ^~~~~~~~~~~~~~~
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:10: note:   candidate expects 3 arguments, 4 provided
+make[2]: *** [CMakeFiles/teleop_keyboard.dir/build.make:63: CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/teleop_keyboard.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

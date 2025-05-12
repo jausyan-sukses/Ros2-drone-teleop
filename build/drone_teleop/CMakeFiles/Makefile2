@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/el-system/ros2_teleop/build/drone_teleop
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/teleop_sequencer_node.dir/all
 all: CMakeFiles/teleop_keyboard.dir/all
 
 .PHONY : all
@@ -63,11 +64,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/teleop_sequencer_node.dir/clean
 clean: CMakeFiles/teleop_keyboard.dir/clean
 clean: CMakeFiles/drone_teleop_uninstall.dir/clean
 clean: CMakeFiles/uninstall.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/teleop_sequencer_node.dir
+
+# All Build rule for target.
+CMakeFiles/teleop_sequencer_node.dir/all:
+	$(MAKE) -f CMakeFiles/teleop_sequencer_node.dir/build.make CMakeFiles/teleop_sequencer_node.dir/depend
+	$(MAKE) -f CMakeFiles/teleop_sequencer_node.dir/build.make CMakeFiles/teleop_sequencer_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles --progress-num=3,4 "Built target teleop_sequencer_node"
+.PHONY : CMakeFiles/teleop_sequencer_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/teleop_sequencer_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/teleop_sequencer_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles 0
+.PHONY : CMakeFiles/teleop_sequencer_node.dir/rule
+
+# Convenience name for target.
+teleop_sequencer_node: CMakeFiles/teleop_sequencer_node.dir/rule
+
+.PHONY : teleop_sequencer_node
+
+# clean rule for target.
+CMakeFiles/teleop_sequencer_node.dir/clean:
+	$(MAKE) -f CMakeFiles/teleop_sequencer_node.dir/build.make CMakeFiles/teleop_sequencer_node.dir/clean
+.PHONY : CMakeFiles/teleop_sequencer_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/teleop_keyboard.dir

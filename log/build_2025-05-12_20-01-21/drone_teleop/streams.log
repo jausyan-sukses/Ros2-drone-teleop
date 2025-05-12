@@ -1,0 +1,11 @@
+[0.019s] Invoking command in '/home/el-system/ros2_teleop/build/drone_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12
+[0.079s] [35m[1mScanning dependencies of target teleop_keyboard[0m
+[0.106s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o[0m
+[3.780s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::publishVelocity(double, double, double, double)’:
+[3.780s] /home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:296:25: error: ‘using _angular_type = struct geometry_msgs::msg::Vector3_<std::allocator<void> >’ {aka ‘struct geometry_msgs::msg::Vector3_<std::allocator<void> >’} has no member named ‘p’
+[3.780s]   296 |         vel_msg.angular.p = p;
+[3.780s]       |                         ^
+[3.781s] make[2]: *** [CMakeFiles/teleop_keyboard.dir/build.make:63: CMakeFiles/teleop_keyboard.dir/src/teleop_keyboard.cpp.o] Error 1
+[3.781s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/teleop_keyboard.dir/all] Error 2
+[3.781s] make: *** [Makefile:141: all] Error 2
+[3.784s] Invoked command in '/home/el-system/ros2_teleop/build/drone_teleop' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/el-system/ros2_teleop/build/drone_teleop -- -j12 -l12

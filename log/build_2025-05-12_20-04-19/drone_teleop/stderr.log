@@ -1,0 +1,4 @@
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp: In member function ‘void TeleopDrone::publishVelocity(double, double, double, double)’:
+/home/el-system/ros2_teleop/src/drone_teleop/src/teleop_keyboard.cpp:290:63: warning: unused parameter ‘p’ [-Wunused-parameter]
+  290 |     void publishVelocity(double x, double y, double z, double p)
+      |                                                        ~~~~~~~^

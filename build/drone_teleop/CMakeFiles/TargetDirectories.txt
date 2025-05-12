@@ -2,6 +2,7 @@
 /home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles/install/local.dir
 /home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles/edit_cache.dir
 /home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles/test.dir
+/home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles/teleop_sequencer_node.dir
 /home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles/teleop_keyboard.dir
 /home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles/install.dir
 /home/el-system/ros2_teleop/build/drone_teleop/CMakeFiles/list_install_components.dir

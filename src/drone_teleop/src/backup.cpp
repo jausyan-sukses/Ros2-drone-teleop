@@ -3,6 +3,7 @@
 #include <mavros_msgs/srv/command_bool.hpp>
 #include <mavros_msgs/srv/set_mode.hpp>
 #include <mavros_msgs/srv/command_tol.hpp>
+#include <mavros_msgs/msg/state.hpp>
 #include <termios.h>
 #include <unistd.h>
 #include <iostream>
@@ -15,12 +16,17 @@ public:
         // Publisher untuk mengontrol pergerakan
         cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/mavros/setpoint_velocity/cmd_vel_unstamped", 10);
 
-        // Clients untuk Arming, Mode, dan Takeoff
+        // Clients untuk Arming, Mode, Takeoff, Landing
         arming_client_ = this->create_client<mavros_msgs::srv::CommandBool>("/mavros/cmd/arming");
         set_mode_client_ = this->create_client<mavros_msgs::srv::SetMode>("/mavros/set_mode");
         takeoff_client_ = this->create_client<mavros_msgs::srv::CommandTOL>("/mavros/cmd/takeoff");
+        land_client_ = this->create_client<mavros_msgs::srv::CommandTOL>("/mavros/cmd/land");
 
-        RCLCPP_INFO(this->get_logger(), "Teleop Drone Node Started! Press 'M' to set GUIDED mode, 'T' to Arm & Takeoff.");
+        // Subscriber untuk cek state drone
+        state_sub_ = this->create_subscription<mavros_msgs::msg::State>(
+            "/mavros/state", 10, std::bind(&TeleopDrone::stateCallback, this, std::placeholders::_1));
+
+        RCLCPP_INFO(this->get_logger(), "Teleop Drone Node Started! Press 'M' to set GUIDED, 'T' to Arm & Takeoff, 'L' to Land, 'Z' to Disarm.");
         run();
     }
 
@@ -29,6 +35,14 @@ private:
     rclcpp::Client<mavros_msgs::srv::CommandBool>::SharedPtr arming_client_;
     rclcpp::Client<mavros_msgs::srv::SetMode>::SharedPtr set_mode_client_;
     rclcpp::Client<mavros_msgs::srv::CommandTOL>::SharedPtr takeoff_client_;
+    rclcpp::Client<mavros_msgs::srv::CommandTOL>::SharedPtr land_client_;
+    rclcpp::Subscription<mavros_msgs::msg::State>::SharedPtr state_sub_;
+    mavros_msgs::msg::State current_state_;
+
+    void stateCallback(const mavros_msgs::msg::State::SharedPtr msg)
+    {
+        current_state_ = *msg;
+    }
 
     int getKey()
     {
@@ -45,6 +59,11 @@ private:
 
     void setModeGuided()
     {
+        if (current_state_.mode == "GUIDED") {
+            RCLCPP_INFO(this->get_logger(), "Already in GUIDED mode");
+            return;
+        }
+
         auto request = std::make_shared<mavros_msgs::srv::SetMode::Request>();
         request->custom_mode = "GUIDED";
 
@@ -57,8 +76,13 @@ private:
         RCLCPP_INFO(this->get_logger(), "Setting mode to GUIDED...");
     }
 
-    void armDroneAndTakeoff()
+    void armDrone()
     {
+        if (current_state_.armed) {
+            RCLCPP_INFO(this->get_logger(), "Drone already armed");
+            return;
+        }
+
         auto arm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();
         arm_request->value = true;
 
@@ -67,20 +91,54 @@ private:
             RCLCPP_WARN(this->get_logger(), "Waiting for Arming service...");
         }
 
-        auto arm_future = arming_client_->async_send_request(arm_request);
+        auto future = arming_client_->async_send_request(arm_request);
         RCLCPP_INFO(this->get_logger(), "Arming drone...");
-        rclcpp::sleep_for(std::chrono::seconds(2)); // Tunggu 2 detik untuk arming selesai
+    }
 
+    void disarmDrone()
+    {
+        if (!current_state_.armed) {
+            RCLCPP_INFO(this->get_logger(), "Drone already disarmed");
+            return;
+        }
+
+        auto disarm_request = std::make_shared<mavros_msgs::srv::CommandBool::Request>();
+        disarm_request->value = false;
+
+        while (!arming_client_->wait_for_service(std::chrono::seconds(2)))
+        {
+            RCLCPP_WARN(this->get_logger(), "Waiting for Arming service...");
+        }
+
+        auto future = arming_client_->async_send_request(disarm_request);
+        RCLCPP_INFO(this->get_logger(), "Disarming drone...");
+    }
+
+    void takeoffDrone()
+    {
         auto takeoff_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();
-        takeoff_request->altitude = 3.0; // Drone takeoff ke 3 meter
+        takeoff_request->altitude = 3.0; // Takeoff ke 3 meter
 
         while (!takeoff_client_->wait_for_service(std::chrono::seconds(2)))
         {
             RCLCPP_WARN(this->get_logger(), "Waiting for Takeoff service...");
         }
 
-        auto takeoff_future = takeoff_client_->async_send_request(takeoff_request);
+        auto future = takeoff_client_->async_send_request(takeoff_request);
         RCLCPP_INFO(this->get_logger(), "Taking off to 3 meters...");
+    }
+
+    void landDrone()
+    {
+        auto land_request = std::make_shared<mavros_msgs::srv::CommandTOL::Request>();
+
+        while (!land_client_->wait_for_service(std::chrono::seconds(2)))
+        {
+            RCLCPP_WARN(this->get_logger(), "Waiting for Land service...");
+        }
+
+        auto future = land_client_->async_send_request(land_request);
+        RCLCPP_INFO(this->get_logger(), "Landing drone...");
     }
 
     void run()
@@ -97,34 +155,42 @@ private:
             switch (key)
             {
             case 'w':
-                msg.linear.x = 1.0;  // Maju
+                msg.linear.x = 0.1;  // Maju
                 break;
             case 's':
-                msg.linear.x = -1.0; // Mundur
+                msg.linear.x = -0.1; // Mundur
                 break;
             case 'a':
-                msg.linear.y = 1.0;  // Geser kiri
+                msg.linear.y = 0.1;  // Geser kiri
                 break;
             case 'd':
-                msg.linear.y = -1.0; // Geser kanan
+                msg.linear.y = -0.1; // Geser kanan
                 break;
             case 'q':
-                msg.angular.z = 1.0; // Rotasi kiri
+                msg.angular.z = 0.1; // Rotasi kiri
                 break;
             case 'e':
-                msg.angular.z = -1.0; // Rotasi kanan
+                msg.angular.z = -0.1; // Rotasi kanan
                 break;
             case 'r':
-                msg.linear.z = 1.0;  // Naik
+                msg.linear.z = 0.1;  // Naik
                 break;
             case 'f':
-                msg.linear.z = -1.0; // Turun
+                msg.linear.z = -0.1; // Turun
                 break;
             case 'm':
                 setModeGuided(); // Set mode GUIDED
                 break;
             case 't':
-                armDroneAndTakeoff(); // Arming dan langsung takeoff
+                armDrone();
+                rclcpp::sleep_for(std::chrono::seconds(3)); // Tunggu supaya benar-benar armed
+                takeoffDrone(); // Arming dan langsung takeoff
+                break;
+            case 'l':
+                landDrone(); // Landing
+                break;
+            case 'z':
+                disarmDrone(); // Disarm drone
                 break;
             case 'x':
                 RCLCPP_INFO(this->get_logger(), "Exiting Teleop...");

@@ -1,4 +1,6 @@
+/home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/launch/pattern_launch.py
 /home/el-system/ros2_teleop/install/drone_teleop/lib/drone_teleop/teleop_keyboard
+/home/el-system/ros2_teleop/install/drone_teleop/lib/drone_teleop/teleop_sequencer_node
 /home/el-system/ros2_teleop/install/drone_teleop/share/ament_index/resource_index/package_run_dependencies/drone_teleop
 /home/el-system/ros2_teleop/install/drone_teleop/share/ament_index/resource_index/parent_prefix_path/drone_teleop
 /home/el-system/ros2_teleop/install/drone_teleop/share/drone_teleop/environment/ament_prefix_path.sh
